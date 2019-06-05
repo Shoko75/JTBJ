@@ -1,4 +1,4 @@
-let numbers = [6, 5, 7, 2];
+let numbers = [6, 5, 7, 2, 10, 3, 11,4, 1, 8];
 let length = numbers.length;
 let swapped;
 do {
