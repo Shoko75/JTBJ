@@ -7,10 +7,10 @@
     Version: 1.0
 
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
-  
+
     1. Home One (Gym)
         1.1 Header Area
         1.2 Hero Area
@@ -58,7 +58,7 @@
 }
 
 .logo a img {
-    max-width: 120px;
+    max-width: 45px;
 }
 
 .main-menu nav ul {
@@ -203,14 +203,17 @@
 }
 
 .hero-content h2 {
-    font-size: 62px;
+    font-size: 143px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0;
     line-height: 65px;
-    margin: 8px 0px 30px;
+    margin: 8px 0px 40px;
     font-weight: 900;
-    font-family: 'Exo 2', sans-serif;
+    font-family: unset;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px white;
 }
 
 .hero-content p {
@@ -223,7 +226,7 @@
 .hero-content a {
     display: inline-block;
     font-size: 15px;
-    color: #fff;
+    color: #000c7d;
     letter-spacing: 0;
     background: #ffba00;
     padding: 12px 55px;
@@ -416,7 +419,7 @@ a.scrl_me_down span {
     font-size: 34px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 32px;
+    line-height: 100px;
     color: #444;
     text-transform: uppercase;
 }
@@ -663,7 +666,7 @@ ul.meta-info li a i {
 .single-trainer .content {
     position: relative;
     z-index: 1;
-    padding: 0px 25px 30px;
+    padding: 15px;
     margin-top: -39px;
 }
 
@@ -1902,27 +1905,27 @@ canvas#fireflyLayer {
 *=============================================*/
 
 .h5-title span, .h5-title h2 {
-    color: #241d6d;
+    color: #000c7d;
 }
 
 .h-style5.sticky-menu {
-    background-color: #241d6d;
+    background-color: #000c7d;
 }
 
 .h-style5 .main-menu nav ul li:hover>a, .h-style5 .main-menu nav ul li a:hover, .h-style5 .main-menu nav ul li.active a {
-    color: #241d6d;
+    color: #ffec00;
 }
 
 .h-style5.sticky-menu .main-menu nav ul li:hover>a, .h-style5.sticky-menu .main-menu nav ul li a:hover, .h-style5.sticky-menu .main-menu nav ul li.active a {
-    color: #2ddbbd;
+    color: #ffec00;
 }
 
 .h-style5 .main-menu nav ul li a:before {
-    background-color: #241d6d;
+    background-color: #ffec00;
 }
 
 .h-style5.sticky-menu .main-menu nav ul li a:before {
-    background-color: #2ddbbd;
+    background-color: #ffec00;
 }
 
 .slider_overlay {
@@ -1930,7 +1933,6 @@ canvas#fireflyLayer {
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%;
     background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #160696, #08f9ce) repeat scroll 0 0;
     background: rgba(0, 0, 0, 0) linear-gradient(90deg, #160696, #08f9ce) repeat scroll 0 0;
     opacity: 0.9;
@@ -1940,7 +1942,6 @@ canvas#fireflyLayer {
 
 .app-slider:before {
     border-right: 47vw solid #fff;
-    border-top: 141px solid transparent;
     bottom: 0;
     content: "";
     height: 0;
@@ -1952,7 +1953,6 @@ canvas#fireflyLayer {
 
 .app-slider:after {
     border-left: 72vw solid #fff;
-    border-top: 100px solid transparent;
     bottom: 0;
     content: "";
     height: 0;
@@ -1963,10 +1963,10 @@ canvas#fireflyLayer {
 }
 
 .app-slider .hero-content h3 {
-    font-size: 50px;
+    font-size: 26px;
     letter-spacing: 0;
     color: #fff;
-    margin-bottom: 43px;
+    margin-bottom: 5px;
     font-weight: 700;
 }
 
@@ -1975,12 +1975,12 @@ canvas#fireflyLayer {
 }
 
 .app-slider .hero-content a {
-    background-color: #2ddbbd;
+    background-color:#ffec00;
 }
 
 .app-slider .hero-content a:hover {
     background-color: #fff;
-    color: #2ddbbd;
+    color: #2dffec00dbbd;
 }
 
 .screen-slides-area {
