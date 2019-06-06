@@ -134,13 +134,13 @@
                                     <pre>function selectionSort(arr) {</pre>
                                         <pre>  for (var i = 0; i < arr.length; i++) {</pre>
                                         <pre>      let min = i;</pre>
-                                        
+
                                         <pre>      for (var j = i + 1; j < arr.length; j++) {</pre>
                                         <pre>          if (arr[min] > arr[j]) {</pre>
                                         <pre>              min = j;</pre>
                                         <pre>          }</pre>
                                         <pre>      }</pre>
-                                        
+
                                         <pre>      if (i !== min) {</pre>
                                         <pre>        [arr[i], arr[min]] = [arr[min], arr[i]];</pre>
                                         <pre>        // Same as the logic below</pre>
@@ -153,7 +153,7 @@
                                     <pre>}<br/></pre>
                                     <br/>
                                     <pre>console.log(selectionSort([6,3,8,9,2,0,3,1,4]))<br/></pre>
-                                        
+
                                 </div>
                             </div>
                         </div>
@@ -198,11 +198,11 @@
                                         <pre>  if (arr.length == 1) {</pre>
                                         <pre>    return arr;</pre>
                                         <pre>  }</pre>
-                                        
+
                                         <pre>  const middle = Math.floor(arr.length / 2);</pre>
                                         <pre>  const left = arr.slice(0, middle);</pre>
                                         <pre>  const right = arr.slice(middle);</pre>
-                                        
+
                                         <pre>  return merge(mergeSort(left), mergeSort(right));</pre></pre>
                                         <pre>}<br/></pre>
                                         <br/>
@@ -242,7 +242,7 @@
                                 <pre>let largeNum = [];<br></pre>
                                 <pre>let sCnt = 0;<br></pre>
                                 <pre>let lCnt = 0;<br><br></pre>
-  
+
                                     <pre>for( let i = 0; i <= len; i++ ){<br></pre>
                                     <pre>    let crnNum = array[i];<br></pre>
                                     <pre>    if( crnNum < middleNum ){<br></pre>
@@ -253,7 +253,7 @@
                                     <pre>        lCnt++;<br></pre>
                                     <pre>    }<br></pre>
                                     <pre>}<br><br></pre>
-  
+
                                     <bre>console.log(smallNum + "," + middleNum + "," + largeNum);<br></bre>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@
                         <img id="mypic" src="assets/images/mobile-screen/insertion_sort.png">
                         <script>
                         var pics_src = new Array("assets/images/mobile-screen/insertion_sort.png","assets/images/mobile-screen/selection_sort.png","assets/images/mobile-screen/bubble_sort.png","assets/images/mobile-screen/merge_sort.png","assets/images/mobile-screen/quick_sort.png");
-                
+
                         function slideshow(num){
                             document.getElementById("mypic").src=pics_src[num];
                         }
@@ -384,7 +384,7 @@
     <div class="footer-area ptb--50">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2018. All Rights Reserved.</p>
+                <p>&copy; 2019. All Rights Reserved.</p>
                 <p>Landing Page Template Designed & Developed By:
                     <strong>Lavaland</strong>
                 </p>
