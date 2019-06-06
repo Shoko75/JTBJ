@@ -7,10 +7,10 @@
     Version: 1.0
 
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
-  
+
     1. Home One (Gym)
         1.1 Header Area
         1.2 Hero Area
@@ -666,7 +666,7 @@ ul.meta-info li a i {
 .single-trainer .content {
     position: relative;
     z-index: 1;
-    padding: 0px 25px 30px;
+    padding: 15px;
     margin-top: -39px;
 }
 
