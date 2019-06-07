@@ -108,17 +108,20 @@
                             </div>
                             <div id="collapseOne" class="collapse show" data-parent="#accordion">
                                 <div class="card-body">
-                                    <pre>let list = [42, 16, 84, 12, 77, 26, 53];</pre>
-                                    <br>
-                                    <pre>for (let i = 1; i < list.length; i++) {</pre>
-                                    <pre>   for (let j = 0; j < i; j++) {</pre>
-                                    <pre>       if (list[i] < list[j]) {</pre>
-                                    <pre>           let tempNum = list.splice(i, 1);</pre>
-                                    <pre>           list.splice(j, 0, tempNum[0]);</pre>
-                                    <pre>       }</pre>
-                                    <pre>   }</pre>
-                                    <pre>}</pre>
-                                    <pre>console.log(list);</pre>
+                                    <pre>
+let list = [42, 16, 84, 12, 77, 26, 53];
+
+for (let i = 1; i < list.length; i++) {
+    for (let j = 0; j < i; j++) {
+        if (list[i] < list[j]) {
+            let tempNum = list.splice(i, 1);
+            list.splice(j, 0, tempNum[0]);
+        }
+    }
+}
+
+console.log(list);
+                                    </pre>
                                 </div>
                             </div>
                         </div>
@@ -131,29 +134,30 @@
                             </div>
                             <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                 <div class="card-body">
-                                    <pre>function selectionSort(arr) {</pre>
-                                        <pre>  for (var i = 0; i < arr.length; i++) {</pre>
-                                        <pre>      let min = i;</pre>
+                                    <pre>
+function selectionSort(arr) {
+        for (var i = 0; i < arr.length; i++) {
+            let min = i;
 
-                                        <pre>      for (var j = i + 1; j < arr.length; j++) {</pre>
-                                        <pre>          if (arr[min] > arr[j]) {</pre>
-                                        <pre>              min = j;</pre>
-                                        <pre>          }</pre>
-                                        <pre>      }</pre>
+            for (var j = i + 1; j < arr.length; j++) {
+                if (arr[min] > arr[j]) {
+                    min = j;
+                }
+            }
 
-                                        <pre>      if (i !== min) {</pre>
-                                        <pre>        [arr[i], arr[min]] = [arr[min], arr[i]];</pre>
-                                        <pre>        // Same as the logic below</pre>
-                                        <pre>        // let temp = arr[i];</pre>
-                                        <pre>        // arr[i] = arr[min];</pre>
-                                        <pre>        // arr[min] = temp;</pre>
-                                        <pre>      }</pre>
-                                        <pre>  }</pre>
-                                        <pre>  return arr;</pre>
-                                    <pre>}<br/></pre>
-                                    <br/>
-                                    <pre>console.log(selectionSort([6,3,8,9,2,0,3,1,4]))<br/></pre>
+            if (i !== min) {
+            [arr[i], arr[min]] = [arr[min], arr[i]];
+            // Same as the logic below
+            // let temp = arr[i];
+            // arr[i] = arr[min];
+            // arr[min] = temp;
+            }
+        }
+        return arr;
+}
 
+console.log(selectionSort([6, 3, 8, 9, 2, 0, 3, 1, 4]));
+                                    </pre>
                                 </div>
                             </div>
                         </div>
@@ -166,22 +170,24 @@
                             </div>
                             <div id="collapseThree" class="collapse" data-parent="#accordion">
                                 <div class="card-body">
-                                    <pre>let numbers = [6, 5, 7, 2, 10, 3, 11,4, 1, 8];<br/></pre>
-                                    <pre>let length = numbers.length;<br/></pre>
-                                    <pre>let swapped;<br/></pre>
-                                    <pre>do {<br/></pre>
-                                    <pre>    swapped = false;</pre>
-                                    <pre>     for (let i = 0; i < length; i++) {</pre>
-                                    <pre>       if (numbers[i] > numbers[i + 1]) {</pre>
-                                    <pre>         let firstNumber = numbers[i];</pre>
-                                    <pre>         numbers[i] = numbers[i + 1];</pre>
-                                    <pre>         numbers[i + 1] = firstNumber;</pre>
-                                    <pre>         swapped = true;</pre>
-                                    <pre>       }</pre>
-                                    <pre>     }</pre>
-                                    <pre>} while (swapped);<br/></pre>
-                                    <br/>
-                                    <pre>console.log(numbers);<br/></pre>
+                                    <pre>
+let numbers = [6, 5, 7, 2, 10, 3, 11, 4, 1, 8];
+let length = numbers.length;
+let swapped;
+do {
+    swapped = false;
+        for (let i = 0; i < length; i++) {
+            if (numbers[i] > numbers[i + 1]) {
+                let firstNumber = numbers[i];
+                numbers[i] = numbers[i + 1];
+                numbers[i + 1] = firstNumber;
+                swapped = true;
+            }
+        }
+} while (swapped);
+
+console.log(numbers);
+                                    <pre>
                                 </div>
                             </div>
                         </div>
@@ -193,36 +199,38 @@
                                 </h5>
                             </div>
                             <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                <div class="card-body">
-                                    <pre>function mergeSort(arr) {<br/></pre>
-                                        <pre>  if (arr.length == 1) {</pre>
-                                        <pre>    return arr;</pre>
-                                        <pre>  }</pre>
+                                <div class="card-body scroll">
+                                    <pre>
+function mergeSort(arr) {
+    if (arr.length == 1) {
+    return arr;
+    }
 
-                                        <pre>  const middle = Math.floor(arr.length / 2);</pre>
-                                        <pre>  const left = arr.slice(0, middle);</pre>
-                                        <pre>  const right = arr.slice(middle);</pre>
+    const middle = Math.floor(arr.length / 2);
+    const left = arr.slice(0, middle);
+    const right = arr.slice(middle);
 
-                                        <pre>  return merge(mergeSort(left), mergeSort(right));</pre></pre>
-                                        <pre>}<br/></pre>
-                                        <br/>
-                                        <pre>function merge(left, right) {</pre>
-                                        <pre>  let result = [];</pre>
-                                        <pre>  let indexLeft = 0;</pre>
-                                        <pre>  let indexRight = 0;</pre>
-                                        <pre>  while (indexLeft < left.length && indexRight < right.length) {</pre>
-                                        <pre>    if (left[indexLeft] < right[indexRight]) {</pre>
-                                        <pre>      result.push(left[indexLeft]);</pre>
-                                        <pre>      indexLeft++;</pre>
-                                        <pre>    } else {</pre>
-                                        <pre>      result.push(right[indexRight]);</pre>
-                                        <pre>      indexRight++;</pre>
-                                        <pre>    }</pre>
-                                        <pre>  }</pre>
-                                        <pre>  return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));</pre>
-                                        <pre>}<br/></pre>
-                                        <br/>
-                                        <pre>console.log(mergeSort([3,1,5,9,4,2]))<br/></pre>
+    return merge(mergeSort(left), mergeSort(right));
+}
+
+function merge(left, right) {
+    let result = [];
+    let indexLeft = 0;
+    let indexRight = 0;
+    while (indexLeft < left.length && indexRight < right.length) {
+        if (left[indexLeft] < right[indexRight]) {
+            result.push(left[indexLeft]);
+            indexLeft++;
+        } else {
+            result.push(right[indexRight]);
+            indexRight++;
+        }
+    }
+    return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
+}
+
+console.log(mergeSort([3, 1, 5, 9, 4, 2]));
+                                    </pre>
                                 </div>
                             </div>
                         </div>
@@ -235,26 +243,28 @@
                             </div>
                             <div id="collapseFive" class="collapse" data-parent="#accordion">
                                 <div class="card-body">
-                                <pre>let array = [1,9,2,8,3,7,4,10,6,5]; <br></pre>
-                                <pre>let len = array.length; <br></pre>
-                                <pre>let middleNum = array[len - 1]; <br></pre>
-                                <pre>let smallNum = [];<br></pre>
-                                <pre>let largeNum = [];<br></pre>
-                                <pre>let sCnt = 0;<br></pre>
-                                <pre>let lCnt = 0;<br><br></pre>
+                                    <pre>
+let array = [1, 9, 2, 8, 3, 7, 4, 10, 6, 5]; 
+let len = array.length; 
+let middleNum = array[len - 1]; 
+let smallNum = [];
+let largeNum = [];
+let sCnt = 0;
+let lCnt = 0;
 
-                                    <pre>for( let i = 0; i <= len; i++ ){<br></pre>
-                                    <pre>    let crnNum = array[i];<br></pre>
-                                    <pre>    if( crnNum < middleNum ){<br></pre>
-                                    <pre>        smallNum[sCnt] = crnNum;<br></pre>
-                                    <pre>        sCnt++;<br></pre>
-                                    <pre>    }else if( crnNum > middleNum ){<br></pre>
-                                    <pre>        largeNum[lCnt] = crnNum;<br></pre>
-                                    <pre>        lCnt++;<br></pre>
-                                    <pre>    }<br></pre>
-                                    <pre>}<br><br></pre>
+for(let i = 0; i <= len; i++){
+    let crnNum = array[i];
+    if(crnNum < middleNum){
+        smallNum[sCnt] = crnNum;
+        sCnt++;
+    } else if(crnNum > middleNum) {
+        largeNum[lCnt] = crnNum;
+        lCnt++;
+    }
+}
 
-                                    <bre>console.log(smallNum + "," + middleNum + "," + largeNum);<br></bre>
+console.log(smallNum + ", " + middleNum + ", " + largeNum);
+                                    </pre>                                        
                                 </div>
                             </div>
                         </div>
