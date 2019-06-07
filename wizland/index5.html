@@ -136,24 +136,24 @@ console.log(list);
                                 <div class="card-body">
                                     <pre>
 function selectionSort(arr) {
-        for (var i = 0; i < arr.length; i++) {
-            let min = i;
+    for (var i = 0; i < arr.length; i++) {
+        let min = i;
 
-            for (var j = i + 1; j < arr.length; j++) {
-                if (arr[min] > arr[j]) {
-                    min = j;
-                }
+        for (var j = i + 1; j < arr.length; j++) {
+            if (arr[min] > arr[j]) {
+                min = j;
             }
+        }
 
-            if (i !== min) {
+        if (i !== min) {
             [arr[i], arr[min]] = [arr[min], arr[i]];
             // Same as the logic below
             // let temp = arr[i];
             // arr[i] = arr[min];
             // arr[min] = temp;
-            }
         }
-        return arr;
+    }
+    return arr;
 }
 
 console.log(selectionSort([6, 3, 8, 9, 2, 0, 3, 1, 4]));
@@ -203,7 +203,7 @@ console.log(numbers);
                                     <pre>
 function mergeSort(arr) {
     if (arr.length == 1) {
-    return arr;
+        return arr;
     }
 
     const middle = Math.floor(arr.length / 2);
@@ -217,6 +217,7 @@ function merge(left, right) {
     let result = [];
     let indexLeft = 0;
     let indexRight = 0;
+
     while (indexLeft < left.length && indexRight < right.length) {
         if (left[indexLeft] < right[indexRight]) {
             result.push(left[indexLeft]);
@@ -226,6 +227,7 @@ function merge(left, right) {
             indexRight++;
         }
     }
+
     return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 }
 
@@ -252,12 +254,13 @@ let largeNum = [];
 let sCnt = 0;
 let lCnt = 0;
 
-for(let i = 0; i <= len; i++){
+for (let i = 0; i <= len; i++){
     let crnNum = array[i];
-    if(crnNum < middleNum){
+
+    if (crnNum < middleNum){
         smallNum[sCnt] = crnNum;
         sCnt++;
-    } else if(crnNum > middleNum) {
+    } else if (crnNum > middleNum) {
         largeNum[lCnt] = crnNum;
         lCnt++;
     }
